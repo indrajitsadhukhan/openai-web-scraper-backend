@@ -8,8 +8,7 @@
 
 
 
-Emerging Technologies
-
+What do we expect from you
 
 
 
@@ -1180,8 +1179,8 @@ No Match Found
 
 
 
+What do we expect from you
 
-Emerging Technologies
 
 
 
@@ -1190,17 +1189,14 @@ Emerging Technologies
 
 
 
-Copy link
 
-
-					Link copied to clipboard
-    			
 
 
 
 
 
 
+We use the PwC Professional framework across the PwC network to clearly identify the attributes and behaviors our people need to help achieve our purpose –to build trust in society and solve important problems. It’s our global leadership development framework which exists to support an individual in development and career progression at each level.
 
 
 
@@ -1210,6 +1206,7 @@ Copy link
 
 
 
+There are five key attributes – Whole leadership, Business acumen, Technical and digital, Global and inclusive, and Relationships – and each is equally important.
 
 
 
@@ -1227,9 +1224,8 @@ Copy link
 
 
 
-Course Overview
-Enabling employees to be empowered and equipped to make decisions at a far more local level than before on upcoming technologies.
 
+Have a look at the five dimensions of the PwC Professional framework:
 
 
 
@@ -1242,8 +1238,6 @@ Enabling employees to be empowered and equipped to make decisions at a far more 
 
 
 
-Course Objective
-To raise awareness of intelligent and upcoming technologies & the associated risks and need for governance structure surrounding it.
 
 
 
@@ -1251,27 +1245,28 @@ To raise awareness of intelligent and upcoming technologies & the associated ris
 
 
 
+Business Acumen
+Technical and Digital
+Whole Leadership
+Relationships
+Global and Inclusive
 
 
 
 
 
+Business Acumen
 
 
 
 
-Course Highlights
 
-Brief on emerging technologies
-Learning via examples- which simplify the technical topic for the non-technical persons
-The program is delivered using comprehensive proprietary training material developed by PwC’s global methodologists
-Sessions are conducted by experienced PwC instructors with extensive practical experience
-Participants who attend all the sessions wil be awarded a “Letter of Participation
 
 
 
 
 
+Business acumen is all about the business knowledge and insights that you bring into the organisation as an employee. Considering the dynamic business scenario, it is necessary to continuously deepen and broaden our understanding about the business. It is expected that we articulate a relevant point of view and make necessary judgments based on the information we have and demonstrate analytical thinking, which will result in developing a business and creating a sustainable value. 
 
 
 
@@ -1279,13 +1274,9 @@ Participants who attend all the sessions wil be awarded a “Letter of Participa
 
 
 
-Learning Outcome
 
-Who should attend
 
-Duration
 
-Course curriculum
 
 
 
@@ -1297,24 +1288,20 @@ Course curriculum
 
 
 
+Technical and Digital
 
 
 
 
 
 
-1
 
 
-               Participants would be equipped with better decision making towards investment in such technologies
-            
 
 
+We apply a range of technical, digital and other professional capabilities to deliver quality and value. As we operate under a dynamic environment, it’s necessary for an individual to upskill themselves on technical as well as digital platforms so that we deliver quality and value to our clients. You will be expected to produce high-quality work which adheres to the relevant professional standards, follow risk management and compliance procedures, validate data and analysis for accuracy and relevance.
 
-2
 
-manage easy migration to such technologies
-            
 
 
 
@@ -1331,12 +1318,10 @@ manage easy migration to such technologies
 
 
 
-3
 
-manage the associated risks and build a strong IT Governance towards them
-         
 
 
+Whole Leadership
 
 
 
@@ -1347,11 +1332,11 @@ manage the associated risks and build a strong IT Governance towards them
 
 
 
+We expect an individual to lead themselves and others. Leading yourself means having a mindset to develop and learn through every opportunity that you have, being open-minded and flexible. Leading others means promoting an inclusive environment, contributing to a culture of continuous development and inspiring others and creating a positive impact.
 
 
 
 
-Middle and senior level profesionals across all the functions.
 
 
 
@@ -1361,7 +1346,6 @@ Middle and senior level profesionals across all the functions.
 
 
 
-It’s an instructor led 4-6  hour program.
 
 
 
@@ -1370,14 +1354,81 @@ It’s an instructor led 4-6  hour program.
 
 
 
+Relationships
 
 
-Brief on emerging technologies
-Current Usage of such emerging technologies
-IT Governance Emerging Technologies
-SAP ECC vs SAP S/4 HANA Overview
-Demonstration of Emerging technologies
-Examples of solutions to address specific pain areas
+
+
+
+
+
+
+
+
+Maintaining cordial relationships means empathising with others, communicating with confidence and clarity, speaking with a purpose and growing sustainable relationships beyond our existing network. We expect an individual to invest in developing meaningful and sustainable relationships. Creating an exceptional client experience by being client and user focused goes a long way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Global and Inclusive
+
+
+
+
+
+
+
+
+
+
+In a complex and continually evolving world, each day will be different, bringing various challenges that can influence an individual’s decision making at a global level. Hence, it is important and necessary to operate and collaborate effectively with a mindset that transcends boundaries and embraces diverse perspectives to develop a better solution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1423,239 +1474,6 @@ Follow us
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-We welcome your comments
-Your request has been submitted and one of our team members will get in touch with you soon! Should you need to reference this in the future we have assigned it the reference number "refID" .
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				Required fields are marked with an asterisk(*)
-			
-
-			   Please correct the errors and send your information again.
-			
-
-
-
-
-
-
-
-
-
-
-
-
-Name
-		*
-
-
-
-
-
-
-
-
-
-
-Organisation
-		*
-
-
-
-
-
-
-
-
-
-
-Email
-		*
-
-
-
-
-
-
-
-
-
-
-Contact No
-		*
-
-
-
-
-
-
-
-
-
-
-Query
-		*
-
-
-
-
-
-
-
-
-
-
- 
-      Courses*
-
-
-
-Please select
-ACCA DipIFR
-Finance for non-financial professionals
-Data Analytics
-Emerging Technologies
-Risk and Governance
-
-
-
-
-
-
-
-Please click here*
-
-Tick this box to verify you are not a robot
-
-
-
-
-
-
-
-
-
-
-         By submitting your contact information you acknowledge that you have read the privacy statement and that you consent to our processing the data in accordance with that privacy statement including international transfers. If you change your mind at any time about wishing to receive material from us you can send an e-mail to privacy@pwc.com.
-      
-
-
-
-
-Submit
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Contact us
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Get in touch
-
-
-
-
-
-
-
-Hide
 
 
 

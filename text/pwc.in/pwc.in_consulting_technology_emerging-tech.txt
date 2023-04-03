@@ -8,7 +8,7 @@
 
 
 
-Metaverse Market | Metaverse for Business - PwC India
+Emerging Technologies | Latest Technologies in IT Industry
 
 
 
@@ -1181,8 +1181,25 @@ No Match Found
 
 
 
-How is the metaverse set to shape the future of business?
-Whether or not you are a technology enthusiast, by now, you would surely have heard about the ‘metaverse’. In 2020, the global metaverse market was estimated to be worth USD 47.69 billion, and it is expected to grow at a compound annual growth rate (CAGR) of 43.3% to reach USD 828.95 billion by 2028. 
+
+
+
+
+Emerging Technology
+Predicting the future is hard and risky, especially in the case of emerging digital technologies. With the rapid technological changes happening around us, it’s clear that businesses need to look at the world through a new lens and adopt a refreshed strategy on these technologies.
+
+
+
+
+
+
+
+
+Copy link
+
+
+					Link copied to clipboard
+    			
 
 
 
@@ -1219,6 +1236,212 @@ Whether or not you are a technology enthusiast, by now, you would surely have he
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Register for our newsletter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We have identified the top emerging technology trends that hold the most promise for your business -
+
+
+
+
+
+
+
+
+
+Web 3.0 – one of the emerging technologies in India – comprises a decentralised web and when we talk about decentralisation, Blockchain comes at the top of its stack. Blockchain has garnered substantial hype by the proliferation of multiple cryptocurrencies, notably Bitcoin and Ethereum.
+Read more
+
+
+
+
+
+
+
+Web 3.0
+
+Web 3.0
+
+
+
+
+
+Whether or not you are a technology enthusiast, by now, you would surely have heard about one of the emerging technologies – the ‘metaverse’. In 2020, the global metaverse market was estimated to be worth US$47.69 billion, and it is expected to grow at a compound annual growth rate (CAGR) of 43.3% to reach US$828.95 by 2028.
+Read more
+
+
+
+
+
+
+
+Metaverse
+
+   Metaverse
+
+
+
+
+
+Quantum computing  – one of the emerging technologies in India – applies quantum physics concepts like superposition, quantum interference and entanglement for computation. This emerging technology is extremely advantageous as they can outperform supercomputers.
+Read More
+
+
+
+
+
+
+
+Quantum Computing
+
+Quantum Computing
+
+
+
+
+
+It is an emerging information technology which is distributed in architecture in which client data is processed close to the originating source at the periphery of the network. It saves bandwidth, has lowest latency and is decentralised.
+Read More
+
+
+
+
+
+
+
+Edge computing
+
+Edge computing
+
+
+
+
+
+The Fifth generation (5G) of wireless technology is one of the fastest and most robust emerging technologies in the world. It provides higher speed, greater capacity and lower latency than its predecessor 4G LTE technology.
+Read more
+
+
+
+
+
+
+
+5G
+
+Five G
+
+
+
+
+
+The PwC India Blockchain Lab is a center of innovation, ideation and extensive research that serves to empower organizations and set the stage for future growth by leveraging the disruptive power of distributed ledger technology.
+Read More
+
+
+
+
+
+
+
+Blockchain Lab
+
+
+
+
+
+
+< Back
+
+
+
+
+
+
+
+< Back
+
+
+[+] Read More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Web 3.0
+Go beyond buzzwords, Understand what is Web 3.0  & how it impacts your business?
+Click here to know more
 
 
 
@@ -1237,20 +1460,8 @@ Whether or not you are a technology enthusiast, by now, you would surely have he
 
 
 Metaverse
-
-                The metaverse combines augmented and virtual reality, opening the door to what is known as ‘mixed
-                reality’. Supported by a number of technologies, this platform offers a wide range of advantages and
-                opportunities – use cases that can be explored across a wide range of sectors and industries. Indeed,
-                the metaverse has the potential to change the way we work and socialise. With its decentralised
-                approach, this user-oriented digital world could have enormous implications for business. Though the
-                metaverse, as tech visionaries imagine it, is still years away, it is now possible for us to envision a
-                parallel virtual world that enables us to collaborate while transcending geographical boundaries. At the
-                same time, the metaverse is still developing, and we need to be cautious about our investments in this
-                technology. While not every business needs to become a metaverse influencer today, it is important to
-                keep pace with evolving technology trends and understand their impact on our business. Moreover, the
-                metaverse can become a key asset for several organisations in the new normal.
-            
-Read more...
+The global metaverse market is estimated to reach US$828.95 value by 2028.
+Explore what's the impact of the technology on your business
 
 
 
@@ -1272,8 +1483,6 @@ Read more...
 
 
 
-So, what is metaverse exactly?
-It’s a digital environment with a virtual world that mimics the real world through the use of emerging technologies. Here, people can use various avatars to socialise and build communities virtually. Any organisation can build its own metaverse. The key technology drivers for the metaverse include artificial intelligence (AI), low/no-code platforms, blockchain, cybernetics, 5G and edge computing, digital identity models, community and power platforms, and virtual reality (VR).
 
 
 
@@ -1285,6 +1494,156 @@ It’s a digital environment with a virtual world that mimics the real world thr
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5G
+5G technology is estimated to reach USD 188 billion value globally by the year 2025
+Click here to know more about how this technology impacts your business
+                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Web 3.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Metaverse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Quantum Computing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Edge computing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Business Trendspotting
 
 
 
@@ -1309,19 +1668,17 @@ Playback of this video is not currently available
 
 13/09/22
 
-Business trendspotting: Metaverse
-Explore the future of metaverse and how it will bring the physical and digital together across sectors.
 
 
 
 
 
+Metaverse
+Explore the future of metaverse and how this emerging technology will bring the physical and digital together across sectors.
 
 
 
 
-Business trendspotting: Metaverse
-Explore the future of metaverse and how it will bring the physical and digital virtual world together across sectors.
 
 
 
@@ -1330,27 +1687,26 @@ Explore the future of metaverse and how it will bring the physical and digital v
 
 
 
+Playback of this video is not currently available
 
 
 
+3:10
 
 
 
 
+08/08/22
 
 
 
-Role of technology
-The origin of the word ‘metaverse’ – a combination of ‘meta’ and ‘universe’ – can be traced back to the 1992 science-fiction novel Snow Crash by Neal Stephenson. In the past 30 years, this fictional concept has slowly become a reality through the step-by-step development of technologies.
 
 
 
+5G
+How will the revolutionary 5G technology – one of the latest emerging technologies – impact consumers and businesses? How will it bring people together and specifically impact India’s growth? Our Advisory leader Arnab Basu explores the possibilities in the launch episode of our new series Business Trendspotting.
 
 
-Infrastructure: The metaverse requires a fast network for its futuristic applications. 5G provides the speed and power this environment needs. Edge computing brings data closer to end users, thus providing the mobility required for the borderless metaverse.
-Enabling technology: The applications of AI in the metaverse include the creation of virtual avatars, language processing and securing of the diverse and rich data processed. Blockchain technology provides the digital proof of ownership that underpins the virtual worlds. Low-code platforms are used to create applications in the metaverse with minimal coding efforts.
-User interface: AR/VR gear like headsets help users to visually experience the 3D environment. Haptic suits are used to simulate touch. Further, 3D engines are used to deliver improved graphics and the performance of interaction. Cryptocurrencies can be used to purchase various items in the virtual world, while non-fungible tokens (NFTs) are virtual items that can be purchased and sold using blockchain technology.
-Experience: Different experiences such as shopping, festivals, gaming and socialisation can be brought to life in the virtual world of metaverse.
 
 
 
@@ -1360,228 +1716,16 @@ Experience: Different experiences such as shopping, festivals, gaming and social
 
 
 
- 
- 
 
 
 
-
-
-
-
-
-
-
-
-
-
-Metaverse in action
-The current form of the metaverse is a basic level of AR and VR. Social media and gaming applications where people interact through their avatars are one example. Moreover, with the growing popularity of NFTs, the metaverse has seen a rise in virtual galleries.
-The future of the metaverse promises to be a realistic 3D digital virtual world where one will be able to interact with customers, conduct commodity exchanges, and enjoy social experiences such as attending concerts and playing games.
-
-
-
-
-
-
-
-
-
-
-What’s in it for you?
-
-
-
-
-
-
-
-
-The metaverse provides plenty of opportunities for brands to connect with their community of customers and followers and engage them through virtual immersive experiences. Many brands can thus make use of the metaverse in offering an immersive experience similar to that experienced while browsing a store in person. Real estate agencies can develop virtual models of buildings that people can visit. This technology can also revolutionise the hybrid workplace model through creative solutions, enabling people to collaborate and work online.
-How does the metaverse add value to a business?  
-The metaverse offers a variety of opportunities to businesses.
-
-
-
-
-
-
-
-
-1. New avenues of business
-The metaverse opens up plenty of avenues in the digital real estate and e-commerce space. Moreover, it can increase the value of various technology companies that develop metaverse platforms and accessories.
-2. Attractive marketing and improved customer experiences
-Both tech and non-tech companies – e.g. FMCG and clothing and apparel companies – can benefit from the metaverse through various marketing opportunities. The metaverse allows extremely personalised experiences and interactive engagement with customers. This can help companies to better understand their customers and develop a lasting relationship with them. Thus, the metaverse can play a huge role in customer retention and engagement for any business.
-
-
-
-
-
-
-
-
-3. New product launches
-Companies can use the metaverse to share innovative ideas and co-create advanced concepts and prototypes with potential users. This can accelerate the product development cycle and help predict the success of an innovation.
-4. Embedded finance opportunities
-It is possible to embed various financial offerings in the metaverse. Users can be offered financial solutions such as loans, buy now pay later (BNPL) schemes, payment wallets and insurance at any point of their journey in the metaverse. Moreover, various financial players can enter into partnerships with platform players to offer these services.
-5. Employee engagement and training
-The gamification of training modules in the manufacturing and automobile industries or any other process industry in the metaverse can result in the development of highly skilled labour. Overall, for any business, the metaverse can help reduce costs and increase efficiency.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Use cases of metaverse
-
-
-
-
-
-Automobiles
-
-Fashion
-
-FMCG
-
-Technology
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-A leading automobile company has recently launched a mobility adventure experience on a popular gaming platform. This virtual space allows users to experience various automobile products and offerings of the company through their customised avatars. The gamified product offerings have helped the company attract a young generation of customers.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-A high-end luxury fashion brand held a virtual exhibit wherein a user’s default avatar was a neutral mannequin. While exploring the different rooms of the exhibit, the user could virtually try out different elements and products. This provided the customers with a one-of-a-kind experience and helped them connect with the brand.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-A popular FMCG company designed virtual wearables as NFT collectibles in the metaverse to celebrate International Friendship Day. The company then auctioned the NFT loot box containing virtual apparel. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-A popular technology company has proposed a metaverse space with virtual autonomous robots where various companies can create virtual office spaces with all the details and constraints of physical spaces.
-
-
-
-
-
-
-
-
-
-
-
-
-
-With the development of technology, the metaverse can establish its own capital market in the future. Transactions in the crypto and NFT markets will bring considerable revenue to businesses. Therefore, the metaverses has the potential to develop into a mature economy where all types of goods are traded.
-
-
-
-
-
-
-
-
-
-
-Emerging technology strategy needs to be a core part of every company’s corporate strategy
+How we can help you put new emerging technologies to work
 Technology Tinkering Lab
+
+
+
+
+We, the Emerging technology team at PwC, are here to support you in your digital businesses to explore new potential and identify opportunities – by keeping up with the latest technological advancements – that can have a force-multiplying effect on innovations which accelerate growth and strategically drive your organisation ahead.
 
 
 
@@ -1593,7 +1737,8 @@ Technology Tinkering Lab
 Strategy and research
 Join our Strategy and research community to proactively identify most promising technology trends & develop an understanding of the impact of your business
 
-Visit our tinkering lab to experience new technology solutions created by us & our partners
+Visit our tinkering lab to experience new technology solutions created by us & our partners
+ 
 
 Click here to know more
 
@@ -1607,9 +1752,8 @@ Click here to know more
 Co-create and prototype
 Explore collaboration opportunities, to address the business problems of the future through emerging technologies
 
-Have an idea or use-case in mind? Let's co-create new technology solutions to address key business challenges
+Have an idea or use-case in mind? Let's co-create new technology solutions to address key business challenges with the emerging technologies in India.
 
- 
 Click here to know more
 
 
@@ -1625,7 +1769,82 @@ Click here to know more
 
 
 
-Related Content
+
+
+
+
+
+{{filterContent.facetedTitle}}
+
+
+
+
+
+
+{{contentList.dataService.numberHits}} {{contentList.dataService.numberHits == 1 ? 'result' : 'results'}}
+
+{{contentList.loadingText}}
+
+
+
+
+
+
+
+
+
+
+
+ 
+{{item.videoDuration}}
+
+
+
+{{item.publishDate}}
+
+
+{{item.title}}
+
+
+
+
+
+
+
+{{item.videoDuration}}
+
+
+
+{{item.publishDate}}
+
+
+{{item.title}}
+
+
+
+
+
+{{contentList.loadingText}}
+
+
+
+
+
+{{contentList.loadMoreLabel}}
+{{contentList.viewAllLabel}}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1709,7 +1928,6 @@ Related Content
 
 
 
-Insights
 
 
 
@@ -1719,14 +1937,6 @@ Insights
 
 
 
-
-
-
-
-
-
-Lorem Ipsum is simply dummy text
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 
 
@@ -1744,5 +1954,427 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
 
-Lorem Ipsum is simply dummy text
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkno
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contact us
+
+
+
+
+
+Sivarama Krishnan
+
+Leader, APAC Cybersecurity & Privacy, PwC India
+
+
+
+ Email
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Follow us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We welcome your comments
+Your request has been submitted and one of our team members will get in touch with you soon! Should you need to reference this in the future we have assigned it the reference number "refID" .
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Required fields are marked with an asterisk(*)
+			
+
+			   Please correct the errors and send your information again.
+			
+
+
+
+
+
+
+
+
+
+
+
+
+Name
+		*
+
+
+
+
+
+
+
+
+
+
+Organisation
+		*
+
+
+
+
+
+
+
+
+
+
+Phone no
+		
+		
+
+
+
+
+
+
+
+
+
+Email id
+		*
+
+
+
+
+
+
+
+
+
+
+Query
+		*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         By submitting your contact information you acknowledge that you have read the privacy statement and that you consent to our processing the data in accordance with that privacy statement including international transfers. If you change your mind at any time about wishing to receive material from us you can send an e-mail to privacy@pwc.com.
+      
+
+
+
+
+Submit
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contact us
+
+
+
+
+
+Ashootosh Chand
+
+Partner, Digital and Emerging Technologies, PwC India
+
+
+
+
+
+
+ Email
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Get in touch
+
+
+
+
+
+
+
+Hide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Offices Worldwide
+
+
+
+
+
+
+
+
+India Offices
+
+
+
+
+
+
+
+
+Contact Us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2018
+							
+							 - 2023 PwC. All rights reserved. PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.
+						
+
+
+
+Privacy
+
+
+Cookies info
+
+
+Legal
+
+
+About Site Provider
+
+
+Site Map
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

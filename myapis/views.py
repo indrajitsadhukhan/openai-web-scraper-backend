@@ -19,7 +19,8 @@ import pandas as pd
 import openai
 import numpy as np
 import tiktoken
-
+import os
+from dotenv import load_dotenv,find_dotenv
 
 
 from openai.embeddings_utils import distances_from_embeddings
@@ -262,7 +263,7 @@ df.n_tokens.hist()
 
 
 
-openai.api_key="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"
+openai.api_key=os.getenv('OPENAI_API_KEY')
 df['embeddings'] = df.text.apply(lambda x: openai.Embedding.create(input=x, engine='text-embedding-ada-002')['data'][0]['embedding'])
 
 df.to_csv('processed/embeddings.csv')
