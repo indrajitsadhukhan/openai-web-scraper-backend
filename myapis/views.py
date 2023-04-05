@@ -32,8 +32,8 @@ from rest_framework.decorators import api_view
 
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
-domain = "openai.com" # <- put your domain to be crawled
-full_url = "https://www.openai.com/" # <- put your domain to be crawled with https or http
+domain = "pwc.in" # <- put your domain to be crawled
+full_url = "https://www.pwc.in/" # <- put your domain to be crawled with https or http
   
 
 # Create a class to parse the HTML and get the hyperlinks
@@ -125,9 +125,10 @@ def crawl(url):
     if not os.path.exists("processed"):
             os.mkdir("processed")
     
-    level=20
+    level=10
     # While the queue is not empty, continue crawling
-    while queue:
+    while level>0:
+        level-=1
         # Get the next URL from the queue
         url = queue.pop()
         print(url) # for debugging and to see the progress
