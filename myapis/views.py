@@ -6,8 +6,6 @@
 # pip install openai
 # pip install tiktoken
 
-# Shaura, Surya
-
 import requests
 import re
 import urllib.request
