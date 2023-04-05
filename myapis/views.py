@@ -6,6 +6,7 @@
 # pip install openai
 # pip install tiktoken
 
+# Shaura, Surya
 
 import requests
 import re
@@ -31,8 +32,8 @@ from rest_framework.decorators import api_view
 
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
-domain = "pwc.in" # <- put your domain to be crawled
-full_url = "https://www.pwc.in/" # <- put your domain to be crawled with https or http
+domain = "openai.com" # <- put your domain to be crawled
+full_url = "https://www.openai.com/" # <- put your domain to be crawled with https or http
   
 
 # Create a class to parse the HTML and get the hyperlinks
@@ -124,10 +125,9 @@ def crawl(url):
     if not os.path.exists("processed"):
             os.mkdir("processed")
     
-    level=50
+    level=20
     # While the queue is not empty, continue crawling
-    while level>0:
-        level-=1
+    while queue:
         # Get the next URL from the queue
         url = queue.pop()
         print(url) # for debugging and to see the progress
@@ -155,7 +155,7 @@ def crawl(url):
                 queue.append(link)
                 seen.add(link)
 
-crawl(full_url)
+
 
 def remove_newlines(serie):
     serie = serie.str.replace('\n', ' ')
@@ -164,7 +164,7 @@ def remove_newlines(serie):
     serie = serie.str.replace('  ', ' ')
     return serie
 
-
+crawl(full_url)
 # Create a list to store the text files
 texts=[]
 
@@ -263,7 +263,7 @@ df.n_tokens.hist()
 
 
 
-openai.api_key=os.getenv('OPENAI_API_KEY')
+openai.api_key="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"
 df['embeddings'] = df.text.apply(lambda x: openai.Embedding.create(input=x, engine='text-embedding-ada-002')['data'][0]['embedding'])
 
 df.to_csv('processed/embeddings.csv')
@@ -351,7 +351,6 @@ def answer_question(
 def getData(request):
     question = request.GET.get('question', '')
     print(question)
-    # person={'name':'Dennis','age':28}
     answer=answer_question(df,question=question)
     print(answer)
     return Response(answer)

@@ -8,7 +8,7 @@
 
 
 
-Emerging Technologies | Latest Technologies in IT Industry
+Blockchain Lab
 
 
 
@@ -384,13 +384,13 @@ Featured
 
 
 
+Capital Projects and Infrastructure
+
+
+
+
+
 Enabling healthcare with technology
-
-
-
-
-
-Budget impetus for defence to achieve Aatmanirbharta and modernisation
 
 
 
@@ -606,13 +606,13 @@ Finance transformation integrated solutions
 
 
 
+Forensics | Emerge stronger from disruption
+
+
+
+
+
 Oil and gas: Digital transformation using edge computing
-
-
-
-
-
-Union Budget 2023-24
 
 
 
@@ -1181,215 +1181,6 @@ No Match Found
 
 
 
-
-
-
-
-Emerging Technology
-Predicting the future is hard and risky, especially in the case of emerging digital technologies. With the rapid technological changes happening around us, it’s clear that businesses need to look at the world through a new lens and adopt a refreshed strategy on these technologies.
-
-
-
-
-
-
-
-
-Copy link
-
-
-					Link copied to clipboard
-    			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Register for our newsletter
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-We have identified the top emerging technology trends that hold the most promise for your business -
-
-
-
-
-
-
-
-
-
-Web 3.0 – one of the emerging technologies in India – comprises a decentralised web and when we talk about decentralisation, Blockchain comes at the top of its stack. Blockchain has garnered substantial hype by the proliferation of multiple cryptocurrencies, notably Bitcoin and Ethereum.
-Read more
-
-
-
-
-
-
-
-Web 3.0
-
-Web 3.0
-
-
-
-
-
-Whether or not you are a technology enthusiast, by now, you would surely have heard about one of the emerging technologies – the ‘metaverse’. In 2020, the global metaverse market was estimated to be worth US$47.69 billion, and it is expected to grow at a compound annual growth rate (CAGR) of 43.3% to reach US$828.95 by 2028.
-Read more
-
-
-
-
-
-
-
-Metaverse
-
-   Metaverse
-
-
-
-
-
-Quantum computing  – one of the emerging technologies in India – applies quantum physics concepts like superposition, quantum interference and entanglement for computation. This emerging technology is extremely advantageous as they can outperform supercomputers.
-Read More
-
-
-
-
-
-
-
-Quantum Computing
-
-Quantum Computing
-
-
-
-
-
-It is an emerging information technology which is distributed in architecture in which client data is processed close to the originating source at the periphery of the network. It saves bandwidth, has lowest latency and is decentralised.
-Read More
-
-
-
-
-
-
-
-Edge computing
-
-Edge computing
-
-
-
-
-
-The Fifth generation (5G) of wireless technology is one of the fastest and most robust emerging technologies in the world. It provides higher speed, greater capacity and lower latency than its predecessor 4G LTE technology.
-Read more
-
-
-
-
-
-
-
-5G
-
-Five G
-
-
-
-
-
-The PwC India Blockchain Lab is a center of innovation, ideation and extensive research that serves to empower organizations and set the stage for future growth by leveraging the disruptive power of distributed ledger technology.
-Read More
-
-
-
-
-
-
-
 Blockchain Lab
 
 
@@ -1397,7 +1188,6 @@ Blockchain Lab
 
 
 
-< Back
 
 
 
@@ -1405,10 +1195,8 @@ Blockchain Lab
 
 
 
-< Back
 
 
-[+] Read More
 
 
 
@@ -1431,6 +1219,10 @@ Blockchain Lab
 
 
 
+About us
+The PwC India Blockchain Lab is a center of innovation, ideation and extensive research that serves to empower organisations and set the stage for future growth by leveraging the disruptive power of distributed ledger technology.
+Since its inception in 2017, it has been at the forefront of ideating, designing and developing innovative solutions using blockchain technology and has been making significant contributions to the advancement of the technology both globally and in India.
+The team comprises of highly experienced blockchain certified professionals, business analysts and software engineering professionals who have successfully delivered multiple projects across various industries, including public sector, cyber forensics, financial services, supply chain management, and healthcare. The lab's work is a testament to the power of blockchain and its potential to revolutionize various industries in the future.
 
 
 
@@ -1439,12 +1231,11 @@ Blockchain Lab
 
 
 
-Web 3.0
-Go beyond buzzwords, Understand what is Web 3.0  & how it impacts your business?
-Click here to know more
 
 
 
+Our key propositions
+While the internet changed the way we communicate, blockchain revolutionised how we exchange value between multiple untrusted parties. The Blockchain Lab draws on the components of blockchain such as cryptography, consensus and smart contracts to help your organisation in building a blockchain application, end­-to-­end.
 
 
 
@@ -1459,20 +1250,20 @@ Click here to know more
 
 
 
-Metaverse
-The global metaverse market is estimated to reach US$828.95 value by 2028.
-Explore what's the impact of the technology on your business
 
+ASSURE
 
 
 
 
 
+COLLABORATE
 
 
 
 
 
+TRANSFORM
 
 
 
@@ -1483,12 +1274,15 @@ Explore what's the impact of the technology on your business
 
 
 
+ASSURE
 
 
 
 
 
 
+Leader and trusted SME
+Being a member of a global blockchain community with an access to 180+ territories and having served multiple geographies and sectors, Blockchain lab is equipped to play the role of a trusted SME for their clients in reviewing their business model, doing course correction and make recommendations for the best practices in their technology roadmap.
 
 
 
@@ -1498,12 +1292,15 @@ Explore what's the impact of the technology on your business
 
 
 
+COLLABORATE
 
 
 
 
 
 
+End-to-end partnership
+Blockchain labs works closely with its clients as one team in building solutions through the creation of a blockchain ecosystem in alliance with technology and cloud service providers to ensure an effective Go-To-Market strategy.
 
 
 
@@ -1513,12 +1310,15 @@ Explore what's the impact of the technology on your business
 
 
 
+TRANSFORM
 
 
 
 
 
 
+Change for the better
+Blockchain lab will help clients not only in creating the roadmap, but also building customized next-generation blockchain solutions to help them navigate through their web 3.0 journey.
 
 
 
@@ -1526,10 +1326,6 @@ Explore what's the impact of the technology on your business
 
 
 
-5G
-5G technology is estimated to reach USD 188 billion value globally by the year 2025
-Click here to know more about how this technology impacts your business
-                                 
 
 
 
@@ -1541,6 +1337,7 @@ Click here to know more about how this technology impacts your business
 
 
 
+Our Journey
 
 
 
@@ -1551,41 +1348,54 @@ Click here to know more about how this technology impacts your business
 
 
 
+5+
+Years of blockchain consulting
 
 
 
 
-Web 3.0
+3
+Strategic projects delivered
 
 
 
 
+4
+Applications in production
 
 
 
 
+10
+Proof of concepts
 
 
 
 
+7+
+Public sector engagements
 
 
-Metaverse
 
 
+2
+Assignments with territory firms
 
 
 
 
+6
+Accelerators
 
 
 
 
+5
+Pilots
 
 
 
 
-Quantum Computing
 
 
 
@@ -1597,25 +1407,39 @@ Quantum Computing
 
 
 
+6+
+years of experience
 
 
+3
+Strategic projects delivered
 
-Edge computing
 
+4
+Applications in production
 
 
+15+
+Proof of concepts
 
 
+7+
+Public sector engagements
 
 
+5+
+Assignments with territory firms
 
 
+6
+Accelerators
 
 
+5
+Pilots
 
 
 
-5G
 
 
 
@@ -1625,6 +1449,7 @@ Edge computing
 
 
 
+Our Capabilities
 
 
 
@@ -1635,51 +1460,65 @@ Edge computing
 
 
 
+8
+Blockchain SMEs 
 
 
 
 
+2
+Blockchain architects
 
 
 
 
-Business Trendspotting
+2
+Business analysts
 
 
 
 
+2
+API developers
 
 
 
 
+4
+Blockchain developers
 
 
 
 
 
-Playback of this video is not currently available
 
 
 
-3:37
 
 
 
 
-13/09/22
 
 
 
+8
+Blockchain SMEs
 
 
+2
+Blockchain architects
 
-Metaverse
-Explore the future of metaverse and how this emerging technology will bring the physical and digital together across sectors.
 
+2
+Business analysts
 
 
+2
+API developers
 
 
+4
+Blockchain developers
 
 
 
@@ -1687,24 +1526,26 @@ Explore the future of metaverse and how this emerging technology will bring the 
 
 
 
-Playback of this video is not currently available
 
 
 
-3:10
 
 
+The PwC Advantage
 
 
-08/08/22
 
 
 
+Diverse Experience: Our team has a wide range of experience of successfully serving a gamut of industries/sectors through our ready solutions/accelerators/thought leaderships etc.
+Excellent Client RoI and VoI: Provision of strategy and implementation roadmaps/executions in accordance with best blockchain practices leading to a remarkable Return on Investment and Value on Investment for our clients.
+Regulatory Understanding: We ensure that all wider regulatory requirements are met, and any potential concerns or restrictions considered. With an in-depth industry and regulatory knowledge helps deliver an effective and robust roadmap for clients.
+Global Market Reach: Collaboration with network partners increases our mindshare on a global scale and paves way to work in emerging Blockchain trends mitigating regulatory barriers 
+Independent Perspective: As an independent firm we provide a clear and objective perspective on technology options and preferred solutions.
+Deep Cross-Industry Expertise: We  have a diaspora of PwC leaders and teams that cuts across industries and sectors helping us understand our clients and their problems in a comprehensive and holistic manner.
 
 
 
-5G
-How will the revolutionary 5G technology – one of the latest emerging technologies – impact consumers and businesses? How will it bring people together and specifically impact India’s growth? Our Advisory leader Arnab Basu explores the possibilities in the launch episode of our new series Business Trendspotting.
 
 
 
@@ -1713,19 +1554,17 @@ How will the revolutionary 5G technology – one of the latest emerging technolo
 
 
 
+Key Sectors catered by us
 
 
 
 
 
 
-How we can help you put new emerging technologies to work
-Technology Tinkering Lab
 
 
 
 
-We, the Emerging technology team at PwC, are here to support you in your digital businesses to explore new potential and identify opportunities – by keeping up with the latest technological advancements – that can have a force-multiplying effect on innovations which accelerate growth and strategically drive your organisation ahead.
 
 
 
@@ -1733,14 +1572,11 @@ We, the Emerging technology team at PwC, are here to support you in your digi
 
 
 
+Public Sector
 
-Strategy and research
-Join our Strategy and research community to proactively identify most promising technology trends & develop an understanding of the impact of your business
 
-Visit our tinkering lab to experience new technology solutions created by us & our partners
- 
 
-Click here to know more
+ 
 
 
 
@@ -1749,14 +1585,12 @@ Click here to know more
 
 
 
-Co-create and prototype
-Explore collaboration opportunities, to address the business problems of the future through emerging technologies
 
-Have an idea or use-case in mind? Let's co-create new technology solutions to address key business challenges with the emerging technologies in India.
+Humanitarian
 
-Click here to know more
 
 
+ 
 
 
 
@@ -1764,6 +1598,250 @@ Click here to know more
 
 
 
+
+
+Financial Services
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+Digital forensics
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+Healthcare
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+Manufacturing
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+Automotive
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+Retail
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+Energy
+
+
+
+ 
+
+
+
+
+
+
+
+
+A glimpse into our customisable offerings – solutions and accelerators
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Trace It
+Health and Wellness Tracker
+Procure-to-pay Solution
+Sandbox for creating/managing workflow
+Certificate verification on Blockchain
+
+
+
+
+Trace It
+
+
+
+
+
+
+Track and trace solution which operates in parallel with existing supply chain management system, and gives end to end traceability
+
+End-to-end visibility with real time updates
+Better demand assessment and inventory planning
+Prevents losses due to counterfeit or expiring product
+
+
+
+
+
+
+
+
+
+Health and Wellness Tracker
+
+
+
+
+
+
+Healthcare based solution that can securely store, and process private health data based on health score algorithm.
+
+Transparent storage & verification of data
+Data driven health scoring algorithm
+Flexible to adapt other use-cases
+
+
+
+
+
+
+
+
+
+Procure-to-pay Solution
+
+
+
+
+
+
+A procure to pay solution to automate processes, foster trust and bring transparency in the vendor payment system
+
+Smart contract enabled vendor payments system
+Transparent and immutable database
+
+
+
+
+
+
+
+
+
+Sandbox for creating/managing workflow
+
+
+
+
+
+
+Bringing all parties on a common platform & providing a single source of truth. Agreed workflow is converted into a smart contract and is set to motion.
+
+Ensuring trust and transparency
+Real time tracking and efficient reconciliation
+Complete audit trail
+
+
+
+
+
+
+
+
+
+Certificate verification on Blockchain
+
+
+
+
+
+
+Tool for storing and validating certificates. After a certificate is issued, the data is digitized and recorded as an immutable transaction on the blockchain. The certificate data can then be cryprographically verified at real time.
+
+Eliminating falsification of documents
+Increased transparency and security
+Removing dependency on 3rd party verifiers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Our thought leadership publications
+
+Technological breakthroughs are happening in all spheres – from material science to computation. And many of these technologies have an impact across sectors. Blockchain, one of the Essential Eight technologies, promises to solve many important problems of the society and the economy.
+Reimagining health information exchange in India using Blockchain - Across the world, blockchain has begun gaining attention to ensure and improve trust, accountability, and transparency in the current complex and interdependent workflows of the healthcare industry. 
+Revamping India’s health insurance sector with blockchain and smart contracts - Blockchain and smart contracts in a decentralized distributed ledger could transform the ways heath insurance ecosystem manage records transparently and execute through participative approach of relevant stakeholder acting as a node.
 
 
 
@@ -1805,6 +1883,7 @@ Click here to know more
 
 {{item.title}}
 
+{{item.text}}
 
 
 
@@ -1820,6 +1899,7 @@ Click here to know more
 
 {{item.title}}
 
+{{item.text}}
 
 
 
@@ -1849,12 +1929,12 @@ Click here to know more
 
 
 
+Insights
 
 
 
 
 
-{{filterContent.facetedTitle}}
 
 
 
@@ -1862,8 +1942,9 @@ Click here to know more
 
 
 
-{{contentList.loadingText}}
 
+Time for trust: How blockchain will transform business and the economy
+PwC’s 'Time for trust' report explores the value blockchain can add to the economy by 2030. We look at how practical, everyday uses are creating an opportunity for organizations to deliver value by building trust and improving efficiency across industries, from healthcare, government and public services, to manufacturing, finance, logistics and retail.
 
 
 
@@ -1874,15 +1955,13 @@ Click here to know more
 
 
 
- 
-{{item.videoDuration}}
 
 
 
-{{item.publishDate}}
+Maintaining a Health and Wellness Repository with a Blockchain-Based Health Monitoring Solution
+The Blockchain based solution helps organizations address the post-pandemic challenges of employees physically visiting workplaces.
 
 
-{{item.title}}
 
 
 
@@ -1890,33 +1969,31 @@ Click here to know more
 
 
 
-{{item.videoDuration}}
 
 
 
-{{item.publishDate}}
 
+Blockchain is here. What’s your next move?
+PwC’s global Blockchain survey which provides an insight into where the companies stand in their blockchain journey and strategies for navigating this new world.
 
-{{item.title}}
 
 
 
 
 
-{{contentList.loadingText}}
 
 
 
 
 
-{{contentList.loadMoreLabel}}
-{{contentList.viewAllLabel}}
 
 
 
 
 
 
+Making sense of bitcoin, cryptocurrency and blockchain
+Get an overview of blockchain, its benefits and unknowns, potential use cases and cryptocurrencies
 
 
 
@@ -1930,6 +2007,8 @@ Click here to know more
 
 
 
+Crypto Center
+Learn about crypto and how it is changing the global financial landscape with PwC’s open-source of knowledge
 
 
 
@@ -1940,13 +2019,11 @@ Click here to know more
 
 
 
- 
 
 
 
-
-
-
+Blockchain is much bigger than financial services - and retailers need to understand that
+Many of us have heard of blockchain and the definitions are becoming more digestible in this tech-centered world – but the sectors that blockchain is impacting are no longer limited to financial services.
 
 
 
@@ -1991,9 +2068,9 @@ Contact us
 
 
 
-Sivarama Krishnan
+Pawan  Kumar S
 
-Leader, APAC Cybersecurity & Privacy, PwC India
+Partner and Leader, Technology Consulting, PwC India
 
 
 
@@ -2001,6 +2078,20 @@ Leader, APAC Cybersecurity & Privacy, PwC India
                                         
 
 
+
+
+
+
+
+
+Arijit  Chakraborti
+
+Partner, Technology Consulting, PwC India
+
+
+
+ Email
+                                        
 
 
 
@@ -2040,231 +2131,6 @@ Follow us
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-We welcome your comments
-Your request has been submitted and one of our team members will get in touch with you soon! Should you need to reference this in the future we have assigned it the reference number "refID" .
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				Required fields are marked with an asterisk(*)
-			
-
-			   Please correct the errors and send your information again.
-			
-
-
-
-
-
-
-
-
-
-
-
-
-Name
-		*
-
-
-
-
-
-
-
-
-
-
-Organisation
-		*
-
-
-
-
-
-
-
-
-
-
-Phone no
-		
-		
-
-
-
-
-
-
-
-
-
-Email id
-		*
-
-
-
-
-
-
-
-
-
-
-Query
-		*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         By submitting your contact information you acknowledge that you have read the privacy statement and that you consent to our processing the data in accordance with that privacy statement including international transfers. If you change your mind at any time about wishing to receive material from us you can send an e-mail to privacy@pwc.com.
-      
-
-
-
-
-Submit
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Contact us
-
-
-
-
-
-Ashootosh Chand
-
-Partner, Digital and Emerging Technologies, PwC India
-
-
-
-
-
-
- Email
-                                        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Get in touch
-
-
-
-
-
-
-
-Hide
 
 
 

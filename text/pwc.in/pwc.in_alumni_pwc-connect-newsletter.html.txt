@@ -135,76 +135,24 @@ Industries
 Industries
 
 
-Capital Projects and Infrastructure
-Financial Services
-Pharmaceuticals and Life Sciences
-Retail and Consumer
 Aerospace and Defence
-Chemicals
-Government and Public Services
-Mining and Metals
-Power
-Smart cities
 Automotive
-Education
-Healthcare
-Oil and Gas
-Private Equity
-Technology, Media and Telecommunications
-Industrial Products
-
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
 Capital Projects and Infrastructure
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
+Chemicals
+Education
 Financial Services
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
+Government and Public Services
+Healthcare
+Industrial Products
+Mining and Metals
+Oil and Gas
 Pharmaceuticals and Life Sciences
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
+Power
+Private Equity
 Retail and Consumer
+Smart cities
+Technology, Media and Telecommunications
+
 
 
 
@@ -230,72 +178,33 @@ Aerospace and Defence
 
 Industries
 
-Chemicals
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
-Government and Public Services
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
-Mining and Metals
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
-Power
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
-Smart cities
-
-
-
-
-
-
-
- Menu
-
-
-Industries
-
 Automotive
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
+Capital Projects and Infrastructure
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
+Chemicals
 
 
 
@@ -321,7 +230,59 @@ Education
 
 Industries
 
+Financial Services
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
+Government and Public Services
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
 Healthcare
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
+Industrial Products
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
+Mining and Metals
 
 
 
@@ -347,6 +308,32 @@ Oil and Gas
 
 Industries
 
+Pharmaceuticals and Life Sciences
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
+Power
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
 Private Equity
 
 
@@ -360,7 +347,7 @@ Private Equity
 
 Industries
 
-Technology, Media and Telecommunications
+Retail and Consumer
 
 
 
@@ -373,7 +360,20 @@ Technology, Media and Telecommunications
 
 Industries
 
-Industrial Products
+Smart cities
+
+
+
+
+
+
+
+ Menu
+
+
+Industries
+
+Technology, Media and Telecommunications
 
 
 
@@ -599,7 +599,7 @@ Featured
 
 
 
-Finance transformation integrated solutions
+Edge implementation enables manufacturers with smart manufacturing
 
 
 
@@ -782,13 +782,13 @@ Featured
 
 
 
-Immersive Outlook 3
-
-
-
-
-
 Fuelling India’s future with bioenergy
+
+
+
+
+
+Immersive Outlook
 
 
 
@@ -897,10 +897,6 @@ Code of Conduct
 About us
 
 Corporate Responsibility (CR)
-
-
-PwCPL
-PwCDSPL
 
 
 
