@@ -31,6 +31,23 @@ from rest_framework.decorators import api_view
 
 max_tokens = 500
 
+"""
+Functions
+1. split_into_many
+2. depth0
+3. crawl
+4. text_csv
+5. openai_embeddings
+6.  remove_newlines
+7. create_context
+8. answer_question
+9. getData
+10. scrape
+
+"""
+
+# Create a dataframe from the list of texts
+df = pd.DataFrame(texts, columns = ['fname', 'text'])
 
 # Function to split the text into chunks of a maximum number of tokens
 def split_into_many(text, max_tokens = max_tokens):
@@ -129,13 +146,12 @@ def text_csv():
             # Omit the first 11 lines and the last 4 lines, then replace -, _, and #update with spaces.
             texts.append((file[11:-4].replace('-',' ').replace('_', ' ').replace('#update',''), text))
 
-    # Create a dataframe from the list of texts
-    df = pd.DataFrame(texts, columns = ['fname', 'text'])
+
     # Set the text column to be the raw text with the newlines removed
     df['text'] = df.fname + ". " + remove_newlines(df.text)
     df.to_csv('processed/scraped.csv')
     df.head()
-    # openai_embeddings()
+    openai_embeddings()
 
 
 def openai_embeddings():
@@ -271,10 +287,10 @@ def answer_question(
 
 
 @api_view(['GET'])
-def getData(request):
+def askQuestion(request):
     question = request.GET.get('question', '')
     print(question)
-    answer="Answer"
+    answer=answer_question(question=question)
     print(answer)
     return Response(answer)
 
