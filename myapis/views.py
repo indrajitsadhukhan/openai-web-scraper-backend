@@ -47,6 +47,7 @@ Functions
 """
 
 df = pd.DataFrame()
+openai.api_key="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"
 
 # Function to split the text into chunks of a maximum number of tokens
 def split_into_many(text, max_tokens = max_tokens):
@@ -102,7 +103,7 @@ def depth0(url):
 
 def crawl(url):
     scale=1
-    upper_limit = 10
+    upper_limit = 3
     count=0
     # Create a directory to store the text files
     if not os.path.exists("text/"):
@@ -189,19 +190,10 @@ def openai_embeddings():
         df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
         df.n_tokens.hist()
 
-
-
-    openai.api_key=""
     df['embeddings'] = df.text.apply(lambda x: openai.Embedding.create(input=x, engine='text-embedding-ada-002')['data'][0]['embedding'])
 
     df.to_csv('processed/embeddings.csv')
     df.head()
-
-
-    df=pd.read_csv('processed/embeddings.csv', index_col=0)
-    df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
-    df.head()
-
 
 
 
@@ -221,13 +213,21 @@ def create_context(
     Create a context for a question by finding the most similar context from the dataframe
     """
 
+    print("Creating context...")
     # Get the embeddings for the question
     q_embeddings = openai.Embedding.create(input=question, engine='text-embedding-ada-002')['data'][0]['embedding']
 
+    print("Q-embeddings")
     # Get the distances from the embeddings
 
-    # = distances_from_embeddings(q_embeddings, df['embeddings'].values, distance_metric='cosine')
+    df=pd.read_csv('processed/embeddings.csv', index_col=0)
+    df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
+
+    print(df['embeddings'])
     df['distances'] = distances_from_embeddings(q_embeddings, df['embeddings'].values, distance_metric='cosine')
+
+    print(df['distances'])
+
     returns = []
     cur_len = 0
 
@@ -243,7 +243,7 @@ def create_context(
         
         # Else add it to the text that is being returned
         returns.append(row["text"])
-
+    
     # Return the context
     return "\n\n###\n\n".join(returns)
 
@@ -263,15 +263,17 @@ def answer_question(
         max_len=max_len,
         size=size,
     )
+    openai.api_key="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"
+    print(openai.api_key)
     # If debug, print the raw model response
     if debug:
         print("Context:\n" + context)
         print("\n\n")
-
+    print("CHK-12")
     try:
         # Create a completions using the question and context
         response = openai.Completion.create(
-            prompt=f"Answer the question based on the context below, and if the question can't be answered based on the context, say \"I don't know\"\n\nContext: {context}\n\n---\n\nQuestion: {question}\nAnswer:",
+            prompt=f"Answer the question based on the context below, and if the question can't be answered based on the context give the answer based on your trained data , say \"The answer is not available on the portal but according to GPT-3 the answer is: ,\"\n\nContext: {context}\n\n---\n\nQuestion: {question}\nAnswer:",
             temperature=0,
             max_tokens=max_tokens,
             top_p=1,
@@ -288,10 +290,11 @@ def answer_question(
 
 @api_view(['GET'])
 def askQuestion(request):
-    question = request.GET.get('question', '')
-    print(question)
-    answer=answer_question(question=question)
-    print(answer)
+    q = request.GET.get('question', '')
+    print("Question: "+q)
+    print("Answer Question called.")
+    answer=answer_question(df,question=q)
+    print("Answer:"+answer)
     return Response(answer)
 
 
