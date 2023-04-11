@@ -46,8 +46,7 @@ Functions
 
 """
 
-# Create a dataframe from the list of texts
-df = pd.DataFrame(texts, columns = ['fname', 'text'])
+df = pd.DataFrame()
 
 # Function to split the text into chunks of a maximum number of tokens
 def split_into_many(text, max_tokens = max_tokens):
@@ -146,7 +145,8 @@ def text_csv():
             # Omit the first 11 lines and the last 4 lines, then replace -, _, and #update with spaces.
             texts.append((file[11:-4].replace('-',' ').replace('_', ' ').replace('#update',''), text))
 
-
+    # Create a dataframe from the list of texts
+    df = pd.DataFrame(texts, columns = ['fname', 'text'])
     # Set the text column to be the raw text with the newlines removed
     df['text'] = df.fname + ". " + remove_newlines(df.text)
     df.to_csv('processed/scraped.csv')
