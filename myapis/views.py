@@ -29,87 +29,7 @@ from openai.embeddings_utils import distances_from_embeddings
 from rest_framework.response import Response    
 from rest_framework.decorators import api_view
 
-# Implement web scraper
-
-
-
-
-
-HTTP_URL_PATTERN = r'^http[s]*://.+'
-
-domain = "economictimes.indiatimes.com" 
-full_url = "https://economictimes.indiatimes.com/"
 max_tokens = 500
-  
-
-
-
-# Create a class to parse the HTML and get the hyperlinks
-class HyperlinkParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        # Create a list to store the hyperlinks
-        self.hyperlinks = []
-
-    # Override the HTMLParser's handle_starttag method to get the hyperlinks
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-
-        # If the tag is an anchor tag and it has an href attribute, add the href attribute to the list of hyperlinks
-        if tag == "a" and "href" in attrs:
-            self.hyperlinks.append(attrs["href"])
-
-def get_hyperlinks(url):
-    
-    # Try to open the URL and read the HTML
-    try:
-        # Open the URL and read the HTML
-        with urllib.request.urlopen(url) as response:
-
-            # If the response is not HTML, return an empty list
-            if not response.info().get('Content-Type').startswith("text/html"):
-                return []
-            
-            # Decode the HTML
-            html = response.read().decode('utf-8')
-    except Exception as e:
-        print(e)
-        return []
-
-    # Create the HTML Parser and then Parse the HTML to get hyperlinks
-    parser = HyperlinkParser()
-    parser.feed(html)
-
-    return parser.hyperlinks
-
-# Function to get the hyperlinks from a URL that are within the same domain
-def get_domain_hyperlinks(local_domain, url):
-    clean_links = []
-    for link in set(get_hyperlinks(url)):
-        clean_link = None
-
-        # If the link is a URL, check if it is within the same domain
-        if re.search(HTTP_URL_PATTERN, link):
-            # Parse the URL and check if the domain is the same
-            url_obj = urlparse(link)
-            if url_obj.netloc == local_domain:
-                clean_link = link
-
-        # If the link is not a URL, check if it is a relative link
-        else:
-            if link.startswith("/"):
-                link = link[1:]
-            elif link.startswith("#") or link.startswith("mailto:"):
-                continue
-            clean_link = "https://" + local_domain + "/" + link
-
-        if clean_link is not None:
-            if clean_link.endswith("/"):
-                clean_link = clean_link[:-1]
-            clean_links.append(clean_link)
-
-    # Return the list of hyperlinks that are within the same domain
-    return list(set(clean_links))
 
 
 # Function to split the text into chunks of a maximum number of tokens
@@ -152,109 +72,71 @@ def depth0(url):
     try:
         url_text=[]
         page = urlopen(url)
-
+        htmlcontent = (page.read()).decode("latin1")
+        soup = BeautifulSoup(htmlcontent,"html.parser")
+        # Loop through all the hyperlinks present in the HTML and if we get http at the begining we add them to a list
+        for link in soup.find_all('a'):
+            h=link.get('href')
+            if h and h.startswith('http'):
+                url_text.append(link.get('href'))
+        return url_text,soup.get_text()
     except:
         print("Failed to do depth0 scraping.")
+        return [],""
 
 def crawl(url):
-    scale=0
+    scale=1
+    upper_limit = 10
+    count=0
+    # Create a directory to store the text files
+    if not os.path.exists("text/"):
+            os.mkdir("text/")
     if scale==0:
         text_link_list,mainpage_content = depth0(url)
-        with open(url+'depth_0.txt','w',encoding="latin1",errors='ignore') as f:
+        with open("text/depth_0.txt",'w',encoding="latin1",errors='ignore') as f:
             f.write(mainpage_content)
         print("Depth0 scraping done!")
-    
+    if scale==1:
+        text_link_list,mainpage_content = depth0(url)
+        if not text_link_list:
+            print("No links present")
+        else:
+            print("Number of hyperlinks in webpage: ",len(text_link_list))
+            for c,link in enumerate(text_link_list):
+                if(count>upper_limit):
+                    break
+                count+=1
+                text_hyperlink_list,hyperlink_content = depth0(link)
+                print("Link %d: "%(c+1),link)
+                with open("text/depth1_%d.txt"%(c+1),'w',encoding="latin1",errors="ignore") as f:
+                    f.write(hyperlink_content)
+        print("Depth1 scraping done!")
+    text_csv()
 
+# Create a CSV file from all the text files in text/
 
+def text_csv():
+    texts=[]
+        # Create a directory to store the text files
+    if not os.path.exists("processed/"):
+            os.mkdir("processed/")
 
+    # Get all the text files in the text directory
+    for file in os.listdir("text/"):
+        # Open the file and read the text
+        with open("text/"+ file, "r", encoding="latin-1") as f:
+            text = f.read()
+            # Omit the first 11 lines and the last 4 lines, then replace -, _, and #update with spaces.
+            texts.append((file[11:-4].replace('-',' ').replace('_', ' ').replace('#update',''), text))
 
+    # Create a dataframe from the list of texts
+    df = pd.DataFrame(texts, columns = ['fname', 'text'])
+    # Set the text column to be the raw text with the newlines removed
+    df['text'] = df.fname + ". " + remove_newlines(df.text)
+    df.to_csv('processed/scraped.csv')
+    df.head()
+    # openai_embeddings()
 
-
-
-
-
-
-
-
-
-
-
-
-# def crawl(url):
-#     # Parse the URL and get the domain
-#     # local_domain = urlparse(url).netloc
-#     local_domain=domain
-
-#     # Create a queue to store the URLs to crawl
-#     queue = deque([url])
-
-#     # Create a set to store the URLs that have already been seen (no duplicates)
-#     seen = set([url])
-
-#     # Create a directory to store the text files
-#     if not os.path.exists("text/"):
-#             os.mkdir("text/")
-
-#     if not os.path.exists("text/"+local_domain+"/"):
-#             os.mkdir("text/" + local_domain + "/")
-
-#     # Create a directory to store the csv files
-#     if not os.path.exists("processed"):
-#             os.mkdir("processed")
-    
-#     level=5
-#     # While the queue is not empty, continue crawling
-#     while level>0:
-#         level-=1
-#         # Get the next URL from the queue
-#         url = queue.pop()
-#         print(url) # for debugging and to see the progress
-
-#         # Save text from the url to a <url>.txt file
-        
-#         with open('text/'+local_domain+'/'+url[8:min(50,len(url))].replace("/", "_") + ".txt", "w", encoding="UTF-8") as f:
-
-#             # Get the text from the URL using BeautifulSoup
-#             soup = BeautifulSoup(requests.get(url).text, "html.parser")
-
-#             # Get the text but remove the tags
-#             text = soup.get_text()
-
-#             # If the crawler gets to a page that requires JavaScript, it will stop the crawl
-#             if ("You need to enable JavaScript to run this app." in text):
-#                 print("Unable to parse page " + url + " due to JavaScript being required")
-            
-#             # Otherwise, write the text to the file in the text directory
-#             f.write(text)
-
-#         # Get the hyperlinks from the URL and add them to the queue
-#         for link in get_domain_hyperlinks(local_domain, url):
-#             if link not in seen:
-#                 queue.append(link)
-#                 seen.add(link)
-#     # Create a list to store the text files
-#     texts=[]
-
-#     # Get all the text files in the text directory
-#     for file in os.listdir("text/" + domain + "/"):
-
-#         # Open the file and read the text
-#         with open("text/" + domain + "/" + file, "r", encoding="UTF-8") as f:
-#             text = f.read()
-
-#             # Omit the first 11 lines and the last 4 lines, then replace -, _, and #update with spaces.
-#             texts.append((file[11:-4].replace('-',' ').replace('_', ' ').replace('#update',''), text))
-
-#     # Create a dataframe from the list of texts
-#     df = pd.DataFrame(texts, columns = ['fname', 'text'])
-
-#     # Set the text column to be the raw text with the newlines removed
-#     df['text'] = df.fname + ". " + remove_newlines(df.text)
-#     df.to_csv('processed/scraped.csv')
-#     df.head()
-#     openai_embeddings()
-
-# ----------------------------------------------------------------------------------------------
 
 def openai_embeddings():
     # Load the cl100k_base tokenizer which is designed to work with the ada-002 model
@@ -302,7 +184,6 @@ def openai_embeddings():
 
     df=pd.read_csv('processed/embeddings.csv', index_col=0)
     df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
-
     df.head()
 
 
