@@ -20,6 +20,9 @@ import numpy as np
 import tiktoken
 import os
 from dotenv import load_dotenv,find_dotenv
+import urllib
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
 
 
 from openai.embeddings_utils import distances_from_embeddings
@@ -36,7 +39,10 @@ HTTP_URL_PATTERN = r'^http[s]*://.+'
 
 domain = "economictimes.indiatimes.com" 
 full_url = "https://economictimes.indiatimes.com/"
+max_tokens = 500
   
+
+
 
 # Create a class to parse the HTML and get the hyperlinks
 class HyperlinkParser(HTMLParser):
@@ -105,113 +111,13 @@ def get_domain_hyperlinks(local_domain, url):
     # Return the list of hyperlinks that are within the same domain
     return list(set(clean_links))
 
-def crawl(url):
-    # Parse the URL and get the domain
-    # local_domain = urlparse(url).netloc
-    local_domain=domain
-
-    # Create a queue to store the URLs to crawl
-    queue = deque([url])
-
-    # Create a set to store the URLs that have already been seen (no duplicates)
-    seen = set([url])
-
-    # Create a directory to store the text files
-    if not os.path.exists("text/"):
-            os.mkdir("text/")
-
-    if not os.path.exists("text/"+local_domain+"/"):
-            os.mkdir("text/" + local_domain + "/")
-
-    # Create a directory to store the csv files
-    if not os.path.exists("processed"):
-            os.mkdir("processed")
-    
-    level=5
-    # While the queue is not empty, continue crawling
-    while level>0:
-        level-=1
-        # Get the next URL from the queue
-        url = queue.pop()
-        print(url) # for debugging and to see the progress
-
-        # Save text from the url to a <url>.txt file
-        
-        with open('text/'+local_domain+'/'+url[8:min(50,len(url))].replace("/", "_") + ".txt", "w", encoding="UTF-8") as f:
-
-            # Get the text from the URL using BeautifulSoup
-            soup = BeautifulSoup(requests.get(url).text, "html.parser")
-
-            # Get the text but remove the tags
-            text = soup.get_text()
-
-            # If the crawler gets to a page that requires JavaScript, it will stop the crawl
-            if ("You need to enable JavaScript to run this app." in text):
-                print("Unable to parse page " + url + " due to JavaScript being required")
-            
-            # Otherwise, write the text to the file in the text directory
-            f.write(text)
-
-        # Get the hyperlinks from the URL and add them to the queue
-        for link in get_domain_hyperlinks(local_domain, url):
-            if link not in seen:
-                queue.append(link)
-                seen.add(link)
-
-
-
-def remove_newlines(serie):
-    serie = serie.str.replace('\n', ' ')
-    serie = serie.str.replace('\\n', ' ')
-    serie = serie.str.replace('  ', ' ')
-    serie = serie.str.replace('  ', ' ')
-    return serie
-
-crawl(full_url)
-# Create a list to store the text files
-texts=[]
-
-# Get all the text files in the text directory
-for file in os.listdir("text/" + domain + "/"):
-
-    # Open the file and read the text
-    with open("text/" + domain + "/" + file, "r", encoding="UTF-8") as f:
-        text = f.read()
-
-        # Omit the first 11 lines and the last 4 lines, then replace -, _, and #update with spaces.
-        texts.append((file[11:-4].replace('-',' ').replace('_', ' ').replace('#update',''), text))
-
-# Create a dataframe from the list of texts
-df = pd.DataFrame(texts, columns = ['fname', 'text'])
-
-# Set the text column to be the raw text with the newlines removed
-df['text'] = df.fname + ". " + remove_newlines(df.text)
-df.to_csv('processed/scraped.csv')
-df.head()
-
-
-
-# Load the cl100k_base tokenizer which is designed to work with the ada-002 model
-tokenizer = tiktoken.get_encoding("cl100k_base")
-
-df = pd.read_csv('processed/scraped.csv', index_col=0)
-df.columns = ['title', 'text']
-
-# Tokenize the text and save the number of tokens to a new column
-df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
-
-# Visualize the distribution of the number of tokens per row using a histogram
-df.n_tokens.hist()
-
-
-max_tokens = 500
 
 # Function to split the text into chunks of a maximum number of tokens
 def split_into_many(text, max_tokens = max_tokens):
 
     # Split the text into sentences
     sentences = text.split('. ')
-
+    tokenizer = tiktoken.get_encoding("cl100k_base")
     # Get the number of tokens for each sentence
     n_tokens = [len(tokenizer.encode(" " + sentence)) for sentence in sentences]
     
@@ -240,43 +146,176 @@ def split_into_many(text, max_tokens = max_tokens):
         tokens_so_far += token + 1
 
     return chunks
+
+
+def depth0(url):
+    try:
+        url_text=[]
+        page = urlopen(url)
+
+    except:
+        print("Failed to do depth0 scraping.")
+
+def crawl(url):
+    scale=0
+    if scale==0:
+        text_link_list,mainpage_content = depth0(url)
+        with open(url+'depth_0.txt','w',encoding="latin1",errors='ignore') as f:
+            f.write(mainpage_content)
+        print("Depth0 scraping done!")
     
 
-shortened = []
 
-# Loop through the dataframe
-for row in df.iterrows():
 
-    # If the text is None, go to the next row
-    if row[1]['text'] is None:
-        continue
 
-    # If the number of tokens is greater than the max number of tokens, split the text into chunks
-    if row[1]['n_tokens'] > max_tokens:
-        shortened += split_into_many(row[1]['text'])
+
+
+
+
+
+
+
+
+
+
+
+
+# def crawl(url):
+#     # Parse the URL and get the domain
+#     # local_domain = urlparse(url).netloc
+#     local_domain=domain
+
+#     # Create a queue to store the URLs to crawl
+#     queue = deque([url])
+
+#     # Create a set to store the URLs that have already been seen (no duplicates)
+#     seen = set([url])
+
+#     # Create a directory to store the text files
+#     if not os.path.exists("text/"):
+#             os.mkdir("text/")
+
+#     if not os.path.exists("text/"+local_domain+"/"):
+#             os.mkdir("text/" + local_domain + "/")
+
+#     # Create a directory to store the csv files
+#     if not os.path.exists("processed"):
+#             os.mkdir("processed")
     
-    # Otherwise, add the text to the list of shortened texts
-    else:
-        shortened.append( row[1]['text'] )
+#     level=5
+#     # While the queue is not empty, continue crawling
+#     while level>0:
+#         level-=1
+#         # Get the next URL from the queue
+#         url = queue.pop()
+#         print(url) # for debugging and to see the progress
+
+#         # Save text from the url to a <url>.txt file
+        
+#         with open('text/'+local_domain+'/'+url[8:min(50,len(url))].replace("/", "_") + ".txt", "w", encoding="UTF-8") as f:
+
+#             # Get the text from the URL using BeautifulSoup
+#             soup = BeautifulSoup(requests.get(url).text, "html.parser")
+
+#             # Get the text but remove the tags
+#             text = soup.get_text()
+
+#             # If the crawler gets to a page that requires JavaScript, it will stop the crawl
+#             if ("You need to enable JavaScript to run this app." in text):
+#                 print("Unable to parse page " + url + " due to JavaScript being required")
+            
+#             # Otherwise, write the text to the file in the text directory
+#             f.write(text)
+
+#         # Get the hyperlinks from the URL and add them to the queue
+#         for link in get_domain_hyperlinks(local_domain, url):
+#             if link not in seen:
+#                 queue.append(link)
+#                 seen.add(link)
+#     # Create a list to store the text files
+#     texts=[]
+
+#     # Get all the text files in the text directory
+#     for file in os.listdir("text/" + domain + "/"):
+
+#         # Open the file and read the text
+#         with open("text/" + domain + "/" + file, "r", encoding="UTF-8") as f:
+#             text = f.read()
+
+#             # Omit the first 11 lines and the last 4 lines, then replace -, _, and #update with spaces.
+#             texts.append((file[11:-4].replace('-',' ').replace('_', ' ').replace('#update',''), text))
+
+#     # Create a dataframe from the list of texts
+#     df = pd.DataFrame(texts, columns = ['fname', 'text'])
+
+#     # Set the text column to be the raw text with the newlines removed
+#     df['text'] = df.fname + ". " + remove_newlines(df.text)
+#     df.to_csv('processed/scraped.csv')
+#     df.head()
+#     openai_embeddings()
+
+# ----------------------------------------------------------------------------------------------
+
+def openai_embeddings():
+    # Load the cl100k_base tokenizer which is designed to work with the ada-002 model
+    tokenizer = tiktoken.get_encoding("cl100k_base")
+
+    df = pd.read_csv('processed/scraped.csv', index_col=0)
+    df.columns = ['title', 'text']
+
+    # Tokenize the text and save the number of tokens to a new column
+    df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
+
+    # Visualize the distribution of the number of tokens per row using a histogram
+    df.n_tokens.hist()
+
+    shortened = []
+
+    # Loop through the dataframe
+    for row in df.iterrows():
+
+        # If the text is None, go to the next row
+        if row[1]['text'] is None:
+            continue
+
+        # If the number of tokens is greater than the max number of tokens, split the text into chunks
+        if row[1]['n_tokens'] > max_tokens:
+            shortened += split_into_many(row[1]['text'])
+        
+        # Otherwise, add the text to the list of shortened texts
+        else:
+            shortened.append( row[1]['text'] )
 
 
-df = pd.DataFrame(shortened, columns = ['text'])
-df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
-df.n_tokens.hist()
+        df = pd.DataFrame(shortened, columns = ['text'])
+        df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
+        df.n_tokens.hist()
 
 
 
-openai.api_key=""
-df['embeddings'] = df.text.apply(lambda x: openai.Embedding.create(input=x, engine='text-embedding-ada-002')['data'][0]['embedding'])
+    openai.api_key=""
+    df['embeddings'] = df.text.apply(lambda x: openai.Embedding.create(input=x, engine='text-embedding-ada-002')['data'][0]['embedding'])
 
-df.to_csv('processed/embeddings.csv')
-df.head()
+    df.to_csv('processed/embeddings.csv')
+    df.head()
 
 
-df=pd.read_csv('processed/embeddings.csv', index_col=0)
-df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
+    df=pd.read_csv('processed/embeddings.csv', index_col=0)
+    df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
 
-df.head()
+    df.head()
+
+
+
+
+def remove_newlines(serie):
+    serie = serie.str.replace('\n', ' ')
+    serie = serie.str.replace('\\n', ' ')
+    serie = serie.str.replace('  ', ' ')
+    serie = serie.str.replace('  ', ' ')
+    return serie
+
+
 
 def create_context(
     question, df, max_len=1800, size="ada"
@@ -357,3 +396,11 @@ def getData(request):
     answer="Answer"
     print(answer)
     return Response(answer)
+
+
+@api_view(['GET'])
+def scrape(request):
+    url = request.GET.get('url','')
+    print(url)
+    crawl(url)
+    return Response(200)
