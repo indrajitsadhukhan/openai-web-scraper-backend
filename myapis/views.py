@@ -263,7 +263,7 @@ def answer_question(
         max_len=max_len,
         size=size,
     )
-    openai.api_key="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"
+    openai.api_key=""
     print(openai.api_key)
     # If debug, print the raw model response
     if debug:
