@@ -30,6 +30,9 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 max_tokens = 500
+upper_limit = 10
+count=0
+
 
 """
 Functions
@@ -43,11 +46,13 @@ Functions
 8. answer_question
 9. getData
 10. scrape
-
 """
+# apiKey = "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"
+
+
 
 df = pd.DataFrame()
-openai.api_key="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"
+openai.api_key="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"
 
 # Function to split the text into chunks of a maximum number of tokens
 def split_into_many(text, max_tokens = max_tokens):
@@ -101,37 +106,54 @@ def depth0(url):
         print("Failed to do depth0 scraping.")
         return [],""
 
+def depth1(url):
+    urls,mainpage_content = depth0(url)
+    print("Number of links for Depth=1: ",len(urls))
+    depth1_urls=[]
+    for c,link in enumerate(urls):
+        if(c>upper_limit):
+            break
+        text_hyperlink_list,hyperlink_content = depth0(link)
+        for link_text in text_hyperlink_list:
+            depth1_urls.append(link_text)
+        print("Link %d: "%(c+1),link)
+        with open("text/depth1_%d.txt"%(c+1),'w',encoding="latin1",errors="ignore") as f:
+            f.write(hyperlink_content)
+    print("Depth1 scraping done!")
+    return depth1_urls
+
+def depth2(url):
+    depth1_urls= depth1(url)
+    print("Number of links for Depth=2:",len(depth1_urls))
+    depth2_urls=[]
+    for c,link in enumerate(depth1_urls):
+        text_hyperlink_list,hyperlink_content = depth0(link)
+        for text_link in text_hyperlink_list:
+            depth2_urls.append(text_link)
+        print("Link %d: "%(c+1),link)
+        with open("text/depth2_%d.txt"%(c+1),'w',encoding="latin1",errors="ignore") as f:
+            f.write(hyperlink_content)
+    print("Depth2 scraping done!")
+    return depth2_urls
+
 def crawl(url):
-    scale=1
-    upper_limit = 3
-    count=0
+    depth=1
     # Create a directory to store the text files
     if not os.path.exists("text/"):
             os.mkdir("text/")
-    if scale==0:
-        text_link_list,mainpage_content = depth0(url)
+    if depth==0:
+        depth1_urls,mainpage_content = depth0(url)
         with open("text/depth_0.txt",'w',encoding="latin1",errors='ignore') as f:
             f.write(mainpage_content)
         print("Depth0 scraping done!")
-    if scale==1:
-        text_link_list,mainpage_content = depth0(url)
-        if not text_link_list:
-            print("No links present")
-        else:
-            print("Number of hyperlinks in webpage: ",len(text_link_list))
-            for c,link in enumerate(text_link_list):
-                if(count>upper_limit):
-                    break
-                count+=1
-                text_hyperlink_list,hyperlink_content = depth0(link)
-                print("Link %d: "%(c+1),link)
-                with open("text/depth1_%d.txt"%(c+1),'w',encoding="latin1",errors="ignore") as f:
-                    f.write(hyperlink_content)
-        print("Depth1 scraping done!")
+    if depth==1:
+       depth1(url)
+    if depth==2:
+        depth2(url)
+
     text_csv()
 
 # Create a CSV file from all the text files in text/
-
 def text_csv():
     texts=[]
         # Create a directory to store the text files
@@ -156,36 +178,21 @@ def text_csv():
 
 
 def openai_embeddings():
-    # Load the cl100k_base tokenizer which is designed to work with the ada-002 model
+    # Tiktoken is used to compute the number of tokens.
     tokenizer = tiktoken.get_encoding("cl100k_base")
-
     df = pd.read_csv('processed/scraped.csv', index_col=0)
     df.columns = ['title', 'text']
-
-    # Tokenize the text and save the number of tokens to a new column
     df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
-
-    # Visualize the distribution of the number of tokens per row using a histogram
     df.n_tokens.hist()
 
     shortened = []
-
-    # Loop through the dataframe
     for row in df.iterrows():
-
-        # If the text is None, go to the next row
         if row[1]['text'] is None:
             continue
-
-        # If the number of tokens is greater than the max number of tokens, split the text into chunks
         if row[1]['n_tokens'] > max_tokens:
             shortened += split_into_many(row[1]['text'])
-        
-        # Otherwise, add the text to the list of shortened texts
         else:
             shortened.append( row[1]['text'] )
-
-
         df = pd.DataFrame(shortened, columns = ['text'])
         df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
         df.n_tokens.hist()
@@ -263,7 +270,7 @@ def answer_question(
         max_len=max_len,
         size=size,
     )
-    openai.api_key=""
+    openai.api_key="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"
     print(openai.api_key)
     # If debug, print the raw model response
     if debug:
@@ -286,6 +293,7 @@ def answer_question(
     except Exception as e:
         print(e)
         return ""
+
 
 
 @api_view(['GET'])
