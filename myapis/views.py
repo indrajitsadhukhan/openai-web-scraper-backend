@@ -47,12 +47,10 @@ Functions
 9. getData
 10. scrape
 """
-# apiKey = "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"
-
 
 
 df = pd.DataFrame()
-openai.api_key="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"
+openai.api_key="YOUR_API_KEY"
 
 # Function to split the text into chunks of a maximum number of tokens
 def split_into_many(text, max_tokens = max_tokens):
